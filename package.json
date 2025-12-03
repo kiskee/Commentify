@@ -1,9 +1,9 @@
 {
-  "name": "commentify",
-  "displayName": "Commentify",
+  "name": "dreamdocs",
+  "displayName": "Dreamdocs",
   "description": "🚀 AI-powered code documentation generator. Instantly create JSDoc comments and inline explanations with Groq AI. Boost your code quality and save time!",
   "version": "1.0.0",
-  "publisher": "danielmecoss",
+  "publisher": "DanielMeCoss",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -20,30 +20,30 @@
   "contributes": {
     "commands": [
       {
-        "command": "commentify.generateJSDoc",
+        "command": "dreamdocs.generateJSDoc",
         "title": "Generate JSDoc Comment"
       },
       {
-        "command": "commentify.generateInline",
+        "command": "dreamdocs.generateInline",
         "title": "Generate Inline Comment"
       },
       {
-        "command": "commentify.setApiKey",
+        "command": "dreamdocs.setApiKey",
         "title": "Set Groq API Key"
       },
       {
-        "command": "commentify.testConnection",
+        "command": "dreamdocs.testConnection",
         "title": "Test Groq Connection"
       }
     ],
     "keybindings": [
       {
-        "command": "commentify.generateJSDoc",
+        "command": "dreamdocs.generateJSDoc",
         "key": "ctrl+shift+d",
         "when": "editorTextFocus"
       },
       {
-        "command": "commentify.generateInline",
+        "command": "dreamdocs.generateInline",
         "key": "ctrl+shift+c",
         "when": "editorTextFocus"
       }

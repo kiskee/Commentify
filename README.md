@@ -1,47 +1,47 @@
-# Commentify 🚀
+# Dreamdocs ✨
 
-**AI-powered code documentation made effortless!**
+**Transform your code into beautifully documented dreams!**
 
-Transform your code documentation workflow with intelligent JSDoc and inline comment generation powered by Groq AI. Say goodbye to tedious manual documentation and hello to professional, consistent comments in seconds.
+Experience the magic of AI-powered documentation with Dreamdocs. Turn your silent code into eloquent, professional documentation that speaks volumes. Powered by Groq AI for lightning-fast, context-aware comment generation.
 
-![Commentify Demo](https://via.placeholder.com/600x300/007ACC/FFFFFF?text=Commentify+Demo)
+![Dreamdocs Demo](https://via.placeholder.com/600x300/6366F1/FFFFFF?text=Dreamdocs+Magic)
 
-## ✨ Features
+## 🌟 Features
 
-- 🤖 **AI-Powered**: Leverages Groq's lightning-fast AI models
-- 📝 **JSDoc Generation**: Complete function documentation with `@param`, `@returns`, `@throws`, and `@example`
-- 💬 **Inline Comments**: Smart explanatory comments for any line of code
-- ⚡ **Lightning Fast**: Instant comment generation with keyboard shortcuts
-- 🎯 **Context-Aware**: Understands your code structure and generates relevant documentation
-- 🔒 **Secure**: Your API key is stored securely in VS Code's secret storage
+- 🤖 **AI-Powered Magic**: Leverages Groq's ultra-fast AI models
+- 📝 **Dream JSDoc**: Complete function documentation with `@param`, `@returns`, `@throws`, and `@example`
+- 💭 **Thoughtful Comments**: Smart inline explanations that make your code speak
+- ⚡ **Instant Dreams**: Lightning-fast generation with simple shortcuts
+- 🎯 **Mind Reader**: Understands your code's intent and context
+- 🔒 **Secure Vault**: API key stored safely in VS Code's secret storage
 
 ## 🚀 Quick Start
 
 ### 1. Install
-Search for "Commentify" in VS Code Extensions or install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=danielmecoss.commentify)
+Search for "Dreamdocs" in VS Code Extensions or install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=danielmecoss.dreamdocs)
 
-### 2. Setup
+### 2. Setup Your Dreams
 1. Get your free API key from [Groq Console](https://console.groq.com/)
 2. Open Command Palette (`Ctrl+Shift+P`)
 3. Run "Set Groq API Key"
-4. Paste your API key
+4. Enter your magical key
 
-### 3. Start Commenting!
-- **`Ctrl+Shift+D`** - Generate JSDoc for functions
-- **`Ctrl+Shift+C`** - Generate inline comments
+### 3. Start Dreaming!
+- **`Ctrl+Shift+D`** - Dream up JSDoc documentation
+- **`Ctrl+Shift+C`** - Whisper inline comments
 
-## 📖 Usage Examples
+## 📖 Dream Examples
 
-### JSDoc Generation
+### JSDoc Dreams
 Place your cursor inside any function and press `Ctrl+Shift+D`:
 
 ```javascript
-// Before
+// Before - Silent code
 async function createUser(userData, options) {
-    // Your function code here
+    // Your mysterious function
 }
 
-// After (Generated automatically)
+// After - Dreams come true ✨
 /**
  * Creates a new user account with the provided user data and configuration options.
  * @param {Object} userData - The user information object containing personal details
@@ -59,18 +59,18 @@ async function createUser(userData, options) {
  * );
  */
 async function createUser(userData, options) {
-    // Your function code here
+    // Your mysterious function
 }
 ```
 
-### Inline Comments
+### Inline Dreams
 Place your cursor on any line and press `Ctrl+Shift+C`:
 
 ```javascript
-// Before
+// Before - Cryptic code
 const hashedPassword = await bcrypt.hash(password, 10);
 
-// After (Generated automatically)
+// After - Crystal clear ✨
 // Hash the password using bcrypt with a salt rounds of 10 for security
 const hashedPassword = await bcrypt.hash(password, 10);
 ```
@@ -79,37 +79,37 @@ const hashedPassword = await bcrypt.hash(password, 10);
 
 - JavaScript
 - TypeScript
-- And more coming soon!
+- More languages coming to your dreams soon!
 
-## ⚙️ Commands
+## ⚙️ Dream Commands
 
 | Command | Shortcut | Description |
 |---------|----------|-------------|
-| Generate JSDoc Comment | `Ctrl+Shift+D` | Creates comprehensive JSDoc documentation for the current function |
-| Generate Inline Comment | `Ctrl+Shift+C` | Generates explanatory comment for the current line |
-| Set Groq API Key | - | Configure your Groq API key securely |
-| Test Groq Connection | - | Verify your API connection is working |
+| Generate JSDoc Comment | `Ctrl+Shift+D` | Dreams up comprehensive JSDoc documentation |
+| Generate Inline Comment | `Ctrl+Shift+C` | Whispers explanatory comments into existence |
+| Set Groq API Key | - | Configure your magical API key |
+| Test Groq Connection | - | Verify your connection to the dream realm |
 
 ## 🔧 Configuration
 
-No additional configuration needed! Just set your API key and start generating comments.
+No complex setup needed! Just set your API key and let the dreams begin.
 
-## 🤝 Contributing
+## 🤝 Join the Dream
 
-Found a bug or have a feature request? 
+Found a bug or have a dream feature request? 
 - 🐛 [Report Issues](https://github.com/kiskee/Commentify/issues)
-- 💡 [Request Features](https://github.com/kiskee/Commentify/issues)
-- 🔧 [Contribute Code](https://github.com/kiskee/Commentify/pulls)
+- 💡 [Dream Features](https://github.com/kiskee/Commentify/issues)
+- 🔧 [Contribute Magic](https://github.com/kiskee/Commentify/pulls)
 
 ## 📄 License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## 🙏 Dream Team
 
 - Powered by [Groq AI](https://groq.com/) for ultra-fast inference
-- Built with ❤️ for the developer community
+- Built with ✨ and dreams for the developer community
 
 ---
 
-**⭐ If Commentify saves you time, please consider giving it a star on [GitHub](https://github.com/kiskee/Commentify)!**
+**⭐ If Dreamdocs makes your code dreams come true, please star us on [GitHub](https://github.com/kiskee/Commentify)!**

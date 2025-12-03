@@ -7,22 +7,22 @@ export function activate(context: vscode.ExtensionContext) {
     const commentGenerator = new CommentGenerator(groqService);
 
     // Generate JSDoc command (Ctrl+Shift+D)
-    const generateJSDoc = vscode.commands.registerCommand('commentify.generateJSDoc', async () => {
+    const generateJSDoc = vscode.commands.registerCommand('dreamdocs.generateJSDoc', async () => {
         await commentGenerator.generateJSDoc();
     });
 
     // Generate inline comment command (Ctrl+Shift+C)
-    const generateInline = vscode.commands.registerCommand('commentify.generateInline', async () => {
+    const generateInline = vscode.commands.registerCommand('dreamdocs.generateInline', async () => {
         await commentGenerator.generateInlineComment();
     });
 
     // Set API Key command
-    const setApiKey = vscode.commands.registerCommand('commentify.setApiKey', async () => {
+    const setApiKey = vscode.commands.registerCommand('dreamdocs.setApiKey', async () => {
         await groqService.setApiKey();
     });
 
     // Test connection command
-    const testConnection = vscode.commands.registerCommand('commentify.testConnection', async () => {
+    const testConnection = vscode.commands.registerCommand('dreamdocs.testConnection', async () => {
         await groqService.testConnection();
     });
 
