@@ -3,6 +3,12 @@
   "displayName": "Commentify",
   "description": "Generate JSDoc and inline comments using Groq AI",
   "version": "1.0.0",
+  "publisher": "danielmecoss",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiskee/Commentify.git"
+  },
   "engines": {
     "vscode": "^1.74.0"
   },
