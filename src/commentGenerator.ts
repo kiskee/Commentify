@@ -97,24 +97,31 @@ export class CommentGenerator {
     }
 
     private async insertJSDoc(editor: vscode.TextEditor, functionCode: string, comment: string): Promise<void> {
-        const lines = functionCode.split('\n');
-        const firstLine = lines[0];
+        const position = editor.selection.active;
         const document = editor.document;
         
-        // Encontrar la línea donde está la función
-        for (let i = 0; i < document.lineCount; i++) {
-            if (document.lineAt(i).text.trim() === firstLine.trim()) {
-                const indent = document.lineAt(i).text.match(/^\s*/)?.[0] || '';
-                const formattedComment = comment
-                    .split('\n')
-                    .map(line => indent + line)
-                    .join('\n') + '\n';
-
-                await editor.edit(editBuilder => {
-                    editBuilder.insert(new vscode.Position(i, 0), formattedComment);
-                });
+        // Buscar hacia arriba hasta encontrar el inicio de la función
+        let functionStartLine = position.line;
+        while (functionStartLine >= 0) {
+            const line = document.lineAt(functionStartLine).text.trim();
+            if (line.includes('function') || line.includes('=>') || 
+                (line.includes('async') && (line.includes('function') || line.includes('=>'))) ||
+                /^\s*(async\s+)?\w+\s*\([^)]*\)\s*{/.test(line)) {
                 break;
             }
+            functionStartLine--;
+        }
+
+        if (functionStartLine >= 0) {
+            const indent = document.lineAt(functionStartLine).text.match(/^\s*/)?.[0] || '';
+            const formattedComment = comment
+                .split('\n')
+                .map(line => indent + line)
+                .join('\n') + '\n';
+
+            await editor.edit(editBuilder => {
+                editBuilder.insert(new vscode.Position(functionStartLine, 0), formattedComment);
+            });
         }
     }
 
