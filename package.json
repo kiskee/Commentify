@@ -1,0 +1,58 @@
+{
+  "name": "commentify",
+  "displayName": "Commentify",
+  "description": "Generate JSDoc and inline comments using Groq AI",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Other"],
+  "icon": "icon.png",
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commentify.generateJSDoc",
+        "title": "Generate JSDoc Comment"
+      },
+      {
+        "command": "commentify.generateInline",
+        "title": "Generate Inline Comment"
+      },
+      {
+        "command": "commentify.setApiKey",
+        "title": "Set Groq API Key"
+      },
+      {
+        "command": "commentify.testConnection",
+        "title": "Test Groq Connection"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "commentify.generateJSDoc",
+        "key": "ctrl+shift+d",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "commentify.generateInline",
+        "key": "ctrl+shift+c",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "groq-sdk": "^0.3.3"
+  }
+}
